@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pararallax</title>
+	<style type="text/css">
+		.image{
+			width: 100%;
+		}
+		.parallax-window {
+			    min-height: 400px;
+			    background: transparent;
+			}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top menu">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <img alt="Brand" src="img/logo1.png" height="100px" width="100px">
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="parallax-window" data-parallax="scroll" >
+		<div class="homepage-hero-module">
+	    <div class="video-container">
+		        <div class="title-container"><h1>Bienvenidos</h1></div>
+		        <video autoplay loop class="fillWidth">
+		            <source src="video/Mp4/Falling-leaf.mp4" type="video/mp4" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
+		            <source src="video/Webm/Falling-leaf.webm" type="video/webm" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
+		        </video>
+		        <div class="poster hidden">
+		            <img src="video/Snapshots/Falling-leaf.jpg" alt="">
+		        </div>
+		    </div>
+		</div>
+	</div>
+	
+	<div style="margin-top: 10%;"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/fondo.jpg"></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/npm.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/coverr.js"></script>
+</body>
+</html>
