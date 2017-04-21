@@ -13,37 +13,112 @@
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="iconos/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
 </head>
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top menu">
+<body data-spy="scroll" data-target="#menu">
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top menu">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="#">
-	        <img alt="Brand" src="img/logo1.png" height="100px" width="100px">
+	        <img alt="Brand" src="img/logo4.png" height="150px" width="150px">
 	      </a>
+	      <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-right">
+	      	<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
+	       <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Wasihome</span>
+	            <span class="icon-bar"></span>side-collapse in
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	       </button>   -->
+	    </div>
+	    <!-- <div id="navbar"  class="navbar-nav navbar-right ">          
+            <ul class="nav navbar-nav">
+              <li><a href="#Home">Inicio</a></li>
+              <li><a href="#users">Servicios</a></li>
+              <li><a href="#Contactenos">Contactenos</a></li>
+            </ul>
+        </div> -->
+	    <div id="navbar" class="navbar side-collapse in">
+		      <ul class="nav navbar-nav navbar-right">	        
+		      		<li><a href="#Inicio" >Inicio</a></li>	
+		      		<li><a href="#Servicios">Servicios</a></li>	
+		      		<li><a href="#Contactenos">Contactenos</a></li>		
+		          </ul>
+		        </li>
+		      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-	<div class="parallax-window" data-parallax="scroll" >
+	<div id="Inicio" class="parallax-window" data-parallax="scroll" >
 		<div class="homepage-hero-module">
 	    <div class="video-container">
-		        <div class="title-container"><h1>Bienvenidos</h1></div>
+		        <div class="title-container">		        
+			        <h1>Grandes Experiencias</h1>
+			        <h2>una realidad a tu Alcance...</h2>
+			        <div class="redes">			        			        	
+			        	<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+						<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>			
+						<i class="fa fa-youtube fa-3x" aria-hidden="true"></i>		
+			        </div>
+			   		<div class="flecha">	
+			        	<a href="#Servicios" ><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+			       	</div>
+		        </div>
 		        <video autoplay loop class="fillWidth">
-		            <source src="video/Mp4/Falling-leaf.mp4" type="video/mp4" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
-		            <source src="video/Webm/Falling-leaf.webm" type="video/webm" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
+		            <source src="video/Mp4/Coverr-office.mp4" type="video/mp4" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
+		            <source src="video/Webm/Coverr-office.webm" type="video/webm" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
 		        </video>
 		        <div class="poster hidden">
-		            <img src="video/Snapshots/Falling-leaf.jpg" alt="">
+		            <img src="video/Snapshots/Coverr-office.jpg" alt="">
 		        </div>
 		    </div>
 		</div>
 	</div>
 	
-	<div style="margin-top: 10%;"></div>
-	<div class="parallax-window" data-parallax="scroll" data-image-src="img/fondo.jpg"></div>
+	<div id="Servicios">
+		<div class="container">
+		<h1>Nuestros servicios</h1>
+		<p>dldldfldsfasdfasdfasdfdsafsdf</p>
+		</div>
+		
+	</div>
+	<div></div>
+	<div id="Tecnologia" class="parallax-window" data-parallax="scroll" data-image-src="img/fondo.jpg">
+		<div class="container">
+		<h1>Nuestros Tecnologia</h1>
+		<p>dldldfldsfasdfasdfasdfdsafsdf</p>
+		<div>
 
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs listTecnologia" role="tablist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Realidad Virtual</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Realidad Aumentad</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Drones</a></li>		    
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="home"><iframe  src="https://www.youtube.com/embed/bEzzTk8bicw?ecver=1" frameborder="0" allowfullscreen></iframe></div>
+		    <div role="tabpanel" class="tab-pane" id="profile"><iframe src="https://www.youtube.com/embed/CoVYHb8uoDM?ecver=1" frameborder="0" allowfullscreen></iframe></div>
+		    <div role="tabpanel" class="tab-pane" id="messages">...</div>		    
+		  </div>
+
+		</div>
+		</div>
+	</div>
+	<div id="Footer" class="container-fluid">
+	<div class="col-md-9 col-sm-5 col-xs-5"><i class="fa fa-copyright" aria-hidden="true">2014 Copyrigh</i></div>
+		<div class="col-md-3 col-sm-7 col-xs-7 redes1">
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-youtube " aria-hidden="true"></i>
+			
+		</div>
+	 </div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/npm.js"></script>
