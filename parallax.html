@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Pararallax</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<style type="text/css">
 		.image{
 			width: 100%;
@@ -26,25 +27,12 @@
 	      </a>
 	      <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-right">
 	      	<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-
-	       <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Wasihome</span>
-	            <span class="icon-bar"></span>side-collapse in
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	       </button>   -->
 	    </div>
-	    <!-- <div id="navbar"  class="navbar-nav navbar-right ">          
-            <ul class="nav navbar-nav">
-              <li><a href="#Home">Inicio</a></li>
-              <li><a href="#users">Servicios</a></li>
-              <li><a href="#Contactenos">Contactenos</a></li>
-            </ul>
-        </div> -->
 	    <div id="navbar" class="navbar side-collapse in">
 		      <ul class="nav navbar-nav navbar-right">	        
-		      		<li><a href="#Inicio" >Inicio</a></li>	
+		      		<li><a href="#Inicio" >Inicio</a></li>		      		
 		      		<li><a href="#Servicios">Servicios</a></li>	
+		      		<li><a href="#PuntoVenta">Punto de Venta</a></li>			      		
 		      		<li><a href="#Contactenos">Contactenos</a></li>		
 		          </ul>
 		        </li>
@@ -58,12 +46,7 @@
 	    <div class="video-container">
 		        <div class="title-container">		        
 			        <h1>Grandes Experiencias</h1>
-			        <h2>una realidad a tu Alcance...</h2>
-			        <div class="redes">			        			        	
-			        	<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-						<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>			
-						<i class="fa fa-youtube fa-3x" aria-hidden="true"></i>		
-			        </div>
+			        <img src="img/frase.png">			        			        
 			   		<div class="flecha">	
 			        	<a href="#Servicios" ><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
 			       	</div>
@@ -84,38 +67,69 @@
 		<h1>Nuestros servicios</h1>
 		<p>dldldfldsfasdfasdfasdfdsafsdf</p>
 		</div>
-		
 	</div>
 	<div></div>
-	<div id="Tecnologia" class="parallax-window" data-parallax="scroll" data-image-src="img/fondo.jpg">
+	<div id="Contactenos" class="parallax-window" data-parallax="scroll">
 		<div class="container">
-		<h1>Nuestros Tecnologia</h1>
-		<p>dldldfldsfasdfasdfasdfdsafsdf</p>
-		<div>
-
-		  <!-- Nav tabs -->
-		  <ul class="nav nav-tabs listTecnologia" role="tablist">
-		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Realidad Virtual</a></li>
-		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Realidad Aumentad</a></li>
-		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Drones</a></li>		    
-		  </ul>
-
-		  <!-- Tab panes -->
-		  <div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="home"><iframe  src="https://www.youtube.com/embed/bEzzTk8bicw?ecver=1" frameborder="0" allowfullscreen></iframe></div>
-		    <div role="tabpanel" class="tab-pane" id="profile"><iframe src="https://www.youtube.com/embed/CoVYHb8uoDM?ecver=1" frameborder="0" allowfullscreen></iframe></div>
-		    <div role="tabpanel" class="tab-pane" id="messages">...</div>		    
-		  </div>
-
+		<h1>Contáctanos</h1>
+		<div class="col-md-6 col-sm-12 col-xs-12 datos">
+			<div class="row">
+			<h3><i class="fa fa-building-o fa-pull-left" aria-hidden="true"></i>Dirección:</h3>
+			<p>Juan Pablo Sanz e Iñaquito esquina – Edif. CAMICON 5to piso</p>
+			</div>
+			<div class="row">
+			<h3><i class="fa fa-phone fa-pull-left" aria-hidden="true"></i>Telefono:</h3>
+			<p>(+539) 983 372 923 / (+539) 2 5127 246</p>
+			</div>
+			<div class="row">
+			<h3><i class="fa fa-envelope-o fa-pull-left" aria-hidden="true"></i>Email:</h3>
+			<p>info@wasihome.com</p>
+			</div>
+			<div class="row redes">			        			        	
+		       	<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+				<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>			
+				<i class="fa fa-youtube fa-3x" aria-hidden="true"></i>		
+		</div>			
 		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+			<form>
+				<div class="form-group">
+				    <label for="exampleInputEmail1">Nombre</label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ex. juanito perez">
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left: 0px;">	
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex: example@ex.com">
+				  </div>
+			  	</div>
+			  	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-right: 0px;">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Telefono</label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ex: 00 000 000">
+				  </div>
+				</div>
+				<div class="form-group">
+				    <label for="exampleInputEmail1">Asunto</label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="texto">
+				</div>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Mensaje</label>
+			    <textarea class="form-control" rows="3"></textarea>
+			  </div>
+			 
+			  <button type="submit" class="btn btn-default ">Enviar</button>
+			</form>
+		</div>
+		
 		</div>
 	</div>
 	<div id="Footer" class="container-fluid">
 	<div class="col-md-9 col-sm-5 col-xs-5"><i class="fa fa-copyright" aria-hidden="true">2014 Copyrigh</i></div>
 		<div class="col-md-3 col-sm-7 col-xs-7 redes1">
-			<i class="fa fa-facebook" aria-hidden="true"></i>
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-			<i class="fa fa-youtube " aria-hidden="true"></i>
+			<i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+			<i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+			<i class="fa fa-youtube fa-1x " aria-hidden="true"></i>
 			
 		</div>
 	 </div>
