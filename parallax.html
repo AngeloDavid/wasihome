@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="indexwasihome">
 <head>
 	<title>Pararallax</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="iconos/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/correo.js"></script>
 </head>
 <body data-spy="scroll" data-target="#menu">
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top menu">
@@ -41,14 +44,14 @@
 	  </div>
 	</nav>
 
-	<div id="Inicio" class="parallax-window" data-parallax="scroll" >
+	<div id="Inicio">
 		<div class="homepage-hero-module">
 	    <div class="video-container">
 		        <div class="title-container">		        
 			        <h1>Grandes Experiencias</h1>
 			        <img src="img/frase.png">			        			        
 			   		<div class="flecha">	
-			        	<a href="#Servicios" ><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+			        	<a href="#Pasos" ><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
 			       	</div>
 		        </div>
 		        <video autoplay loop class="fillWidth">
@@ -62,14 +65,30 @@
 		</div>
 	</div>
 	
-	<div id="Servicios">
+	<div id="Pasos" class="parallax-window" data-parallax="scroll">
 		<div class="container">
-		<h1>Nuestros servicios</h1>
-		<p>dldldfldsfasdfasdfasdfdsafsdf</p>
+			<h1>Cumplimos tus sueños en 4 pasos</h1>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<h3>Visítanos</h3>
+					<img src="img/VISITANOS.png"/><br>
+					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<h3>Experimenta</h3>
+					<img src="img/EXPERIMENTA.png"/><br>
+					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<h3>Siente</h3>
+					<img src="img/SIENTE.png"/><br>
+					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<h3>Ahorra</h3><img src="img/AHORRO.png"/><br>
+					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+			</div>
 		</div>
 	</div>
 	<div></div>
-	<div id="Contactenos" class="parallax-window" data-parallax="scroll">
+	<div id="Contactenos" ng-controller="Contactenos as cont">
 		<div class="container">
 		<h1>Contáctanos</h1>
 		<div class="col-md-6 col-sm-12 col-xs-12 datos">
@@ -92,33 +111,39 @@
 		</div>			
 		</div>
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<form>
+			<div id="mensaje"></div>
+			<form name="form_contact" novalidate>
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Nombre</label>
-				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ex. juanito perez">
+				    <input type="text" class="form-control" id="txtNombre" name="Name" ng-model="frm.Name" placeholder="Ex. juanito perez" required>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left: 0px;">	
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Email</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex: example@ex.com">
+				    <input type="email" class="form-control" id="txtEmail" name="Email" ng-model="frm.Email" placeholder="ex: example@ex.com">
 				  </div>
 			  	</div>
 			  	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-right: 0px;">
 				  <div class="form-group">
-				    <label for="exampleInputEmail1">Telefono</label>
-				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ex: 00 000 000">
+				    <label for="exampleInputEmail1">Teléfono</label>
+				    <input type="text" class="form-control" id="txtPhone" name="Phone" ng-model="frm.Phone" placeholder="ex: 00 000 000">
 				  </div>
 				</div>
 				<div class="form-group">
-				    <label for="exampleInputEmail1">Asunto</label>
-				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="texto">
+					<label for="exampleInputEmail1">¿Que le interesó?</label>
+					<select type="text" class="form-control" id="txtProduct" name="Producto" ng-model="frm.Producto">
+						<option>Inmobiliaria</option>
+						<option>Servicios</option>
+						<option>Punto de Venta</option>
+						<option>Tecnología</option>
+					</select>
 				</div>
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Mensaje</label>
-			    <textarea class="form-control" rows="3"></textarea>
+			    <textarea class="form-control" rows="5" placeholder="Me interesa su producto por ..." id="txtMensaje" name="Mensaje" ng-model="frm.Mensaje"></textarea>
 			  </div>
 			 
-			  <button type="submit" class="btn btn-default ">Enviar</button>
+			  <button type="submit" class="btn btn-default " ng-click="cont.enviarDatos(frm)">Enviar</button>
 			</form>
 		</div>
 		

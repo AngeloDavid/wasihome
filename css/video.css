@@ -118,16 +118,31 @@
 }
 
 
-#Servicios{
+#Pasos{
 	padding-top: 10%;
 	padding-bottom: 10%;	
 	background-color: #7a7a7a;
 	color: white;
 }
-
-#Tecnologia h1,#Tecnologia p, #Servicios h1, #Servicios p{
+#Pasos h1{
+	text-align: right;
+	margin-bottom: 10%;
+	color: #5f4332;
+	text-shadow: -1px 2px 3px #FFFFFF;
+	
+}
+#Pasos h3{
 	text-align: center;
 }
+#Pasos img{
+	width: 50%;
+	height: 50%;
+	margin-left: 20%;
+}
+#Pasos i{
+	margin-left: 40%;
+}
+
 #Contactenos {
 	
 	color: white;
@@ -146,26 +161,7 @@
 	padding-left: 10%;
 
 }
-/*.listTecnologia{
-	justify-content: center;
-	border-color: transparent;
-	border-style: none;
-	box-shadow: none;
-	padding-top: 3%;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-.listTecnologia .active{
-	border-radius: 5px;
-}
-.tab-content{
-	justify-content: center;
-	margin: 3% 20% 5% 20%; 
-	background-color: #5f4332;
-}
-.tabpanel{
-	padding: 3% 25% 3% 25%;
-}*/
+
 #Footer{
 	color: white;	
 	background-color: #5f4332;	
@@ -207,4 +203,4 @@
               width:0;
               padding-right: 0px;
           }
-      }}
+      }
