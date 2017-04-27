@@ -55,9 +55,9 @@
 
 .title-container{
 	vertical-align: middle;
-	    z-index: 1000;
+	z-index: 1000;
     position: absolute;
-    top: 45%;
+	top: 45%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -73,8 +73,10 @@
 	color: #781d1d;
 }
 .title-container img{
-	margin-top:-2%;
 	width: 30%;    
+}
+.title-container .r1{
+	padding-right: 10%;
 }
 .title-container h2{
 	font-style: oblique;
@@ -95,7 +97,8 @@
 }
 
 .redes i:hover {
-	color: #5f4332;		
+	color: #5f4332;	
+	cursor: pointer;	
 }
 
 .flecha>a{
@@ -119,30 +122,76 @@
 
 
 #Pasos{
-	padding-top: 10%;
-	padding-bottom: 10%;	
+	padding-top: 15%;
+	padding-bottom: 15%;
 	background-color: #7a7a7a;
 	color: white;
+	align-items: center;
 }
 #Pasos h1{
+	/*font-family: 'Pacifico', cursive;*/
+	/*font-family: avenir, 'avenir next', helvetica, arial, sans-serif ,cursive; */
+	font-family:'Avenir Next';
+	font-size: 60px;
 	text-align: right;
 	margin-bottom: 10%;
-	color: #5f4332;
-	text-shadow: -1px 2px 3px #FFFFFF;
+	font-weight: bold;
+	font-style: oblique;
+	/*color: #5f4332;*/
+	color: #FFFFFF;
+	text-shadow: -1px 2px 3px #781d1d;
 	
 }
 #Pasos h3{
 	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+
 }
 #Pasos img{
-	width: 50%;
-	height: 50%;
-	margin-left: 20%;
+	width: 90%;
+	height: 90%;
 }
 #Pasos i{
 	margin-left: 40%;
 }
+#Pasos i:hover{
 
+}
+#Pasos .celda:hover{
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	
+}
+#Pasos .popover-title{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: larger;
+}
+.popover-content{
+	text-align: center;
+	font-size: larger;
+}
+.popover-content ul{
+	text-align: left;
+}
+.popover.bottom {
+	margin-top: 0%;
+	color: white;
+	border: none;
+	background-color: transparent;
+	padding: 10px;
+	
+	
+}
+.popover.bottom>.arrow:after{
+	border: none;
+	background-color: transparent;
+}
+.popover.bottom>.arrow{
+	border-bottom-color: transparent;
+}
 #Contactenos {
 	
 	color: white;
@@ -203,4 +252,19 @@
               width:0;
               padding-right: 0px;
           }
+          #Pasos img{
+          	width: 55%;
+          	height: 55%;
+          	margin:10px auto;
+			display:block;
+          }
+          #Pasos i{
+			  margin-top: -10%;
+          	  margin-left: 48%;
+			  display:block;
+          }
+		  #Pasos .celda{
+			  margin-bottom: 3%;
+		  }
+
       }

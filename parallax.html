@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html ng-app="indexwasihome">
 <head>
-	<title>Pararallax</title>
+	<title>WasiHome - Inmobiliaria</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="icon" type="image/x-icon" href="img/logo1.png">
 	<style type="text/css">
 		.image{
 			width: 100%;
@@ -17,7 +18,7 @@
 	<link rel="stylesheet" href="iconos/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/correo.js"></script>
 </head>
@@ -47,12 +48,10 @@
 	<div id="Inicio">
 		<div class="homepage-hero-module">
 	    <div class="video-container">
-		        <div class="title-container">		        
-			        <h1>Grandes Experiencias</h1>
-			        <img src="img/frase.png">			        			        
-			   		<div class="flecha">	
-			        	<a href="#Pasos" ><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
-			       	</div>
+		        <div class="title-container">
+					<div class="row r1"><img src="img/f4.png"> </div>
+					<div class="row r2"><img src="img/f3.png"> </div>
+			   		
 		        </div>
 		        <video autoplay loop class="fillWidth">
 		            <source src="video/Mp4/Coverr-office.mp4" type="video/mp4" />Su navegador no soporta la etiqueta de vídeo. Le sugiero que actualice su navegador.
@@ -67,25 +66,26 @@
 	
 	<div id="Pasos" class="parallax-window" data-parallax="scroll">
 		<div class="container">
-			<h1>Cumplimos tus sueños en 4 pasos</h1>
+			<div class="row"><h1>Cumplimos tus sueños <br> en 4 pasos</h1></div>
 			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div id="icon1"  class="col-md-3 col-sm-6 col-xs-12 celda" >
 					<h3>Visítanos</h3>
 					<img src="img/VISITANOS.png"/><br>
 					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div id="icon2" class="col-md-3 col-sm-6 col-xs-12 celda">
 					<h3>Experimenta</h3>
 					<img src="img/EXPERIMENTA.png"/><br>
-					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
+					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+				<div id="icon3" class="col-md-3 col-sm-6 col-xs-12 celda">
 					<h3>Siente</h3>
 					<img src="img/SIENTE.png"/><br>
-					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
+					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+				<div id="icon4" class="col-md-3 col-sm-6 col-xs-12 celda">
 					<h3>Ahorra</h3><img src="img/AHORRO.png"/><br>
-					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
+					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
 			</div>
 		</div>
+		<!--<iframe src="http://wasihome.com/admin/VR_Directorio/"  width = "800" height = "600" allowFullScreen></iframe>-->
 	</div>
 	<div></div>
 	<div id="Contactenos" ng-controller="Contactenos as cont">
@@ -115,23 +115,24 @@
 			<form name="form_contact" novalidate>
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Nombre</label>
-				    <input type="text" class="form-control" id="txtNombre" name="Name" ng-model="frm.Name" placeholder="Ex. juanito perez" required>
+				    <input type="text" class="form-control" id="txtNombre" name="Name" ng-model="frm.Name" placeholder="Ingrese su nombre" required>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left: 0px;">	
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Email</label>
-				    <input type="email" class="form-control" id="txtEmail" name="Email" ng-model="frm.Email" placeholder="ex: example@ex.com">
+				    <input type="email" class="form-control" id="txtEmail" name="Email" ng-model="frm.Email" placeholder="Ingrese su e-mail">
 				  </div>
 			  	</div>
-			  	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-right: 0px;">
+			  	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left: 0px;">
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Teléfono</label>
-				    <input type="text" class="form-control" id="txtPhone" name="Phone" ng-model="frm.Phone" placeholder="ex: 00 000 000">
+				    <input type="text" class="form-control" id="txtPhone" name="Phone" ng-model="frm.Phone" placeholder="Ingrese su numero telefonico">
 				  </div>
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">¿Que le interesó?</label>
 					<select type="text" class="form-control" id="txtProduct" name="Producto" ng-model="frm.Producto">
+						<option value="" disabled selected>Seleccione una opción</option>
 						<option>Inmobiliaria</option>
 						<option>Servicios</option>
 						<option>Punto de Venta</option>
@@ -140,7 +141,7 @@
 				</div>
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Mensaje</label>
-			    <textarea class="form-control" rows="5" placeholder="Me interesa su producto por ..." id="txtMensaje" name="Mensaje" ng-model="frm.Mensaje"></textarea>
+			    <textarea class="form-control" rows="5" placeholder="¿Cómo podemos ayudarle?" id="txtMensaje" name="Mensaje" ng-model="frm.Mensaje"></textarea>
 			  </div>
 			 
 			  <button type="submit" class="btn btn-default " ng-click="cont.enviarDatos(frm)">Enviar</button>
@@ -163,5 +164,6 @@
 	<script src="js/npm.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/coverr.js"></script>
+	<script src="js/codigo.js"></script>
 </body>
 </html>
