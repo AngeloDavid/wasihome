@@ -4,20 +4,22 @@
 	<title>WasiHome - Inmobiliaria</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="icon" type="image/x-icon" href="img/logo1.png">
-	<style type="text/css">
-		.image{
-			width: 100%;
-		}
-		.parallax-window {
-			    min-height: 400px;
-			    background: transparent;
-			}
-	</style>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="iconos/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<style type="text/css">
+		.image{
+			width: 100%;
+		}
+		.parallax-window {
+			min-height: 400px;
+			background: transparent;
+		}
+	</style>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/correo.js"></script>
@@ -48,9 +50,11 @@
 	<div id="Inicio">
 		<div class="homepage-hero-module">
 	    <div class="video-container">
+
 		        <div class="title-container">
-					<div class="row r1"><img src="img/f4.png"> </div>
-					<div class="row r2"><img src="img/f3.png"> </div>
+					<!--<button id="prueba">ohla</button>-->
+					<div id="txt1" class="row r1 animated bounceInRight"><img src="img/f4.png"> </div>
+					<div id="txt2" class="row r2 animated bounceInLeft"><img src="img/f3.png"> </div>
 			   		
 		        </div>
 		        <video autoplay loop class="fillWidth">
@@ -63,24 +67,24 @@
 		    </div>
 		</div>
 	</div>
-	
-	<div id="Pasos" class="parallax-window" data-parallax="scroll">
+
+	<div id="Pasos" class="parallax-window" data-parallax="scroll" data-image-src ="img/fondo-2.png" data-speed="0.1" data-bleed="3">
+
 		<div class="container">
-			<div class="row"><h1>Cumplimos tus sueños <br> en 4 pasos</h1></div>
 			<div class="row">
-				<div id="icon1"  class="col-md-3 col-sm-6 col-xs-12 celda" >
+				<div id="icon1"  class="col-md-3 col-sm-6 col-xs-12 celda animated fadeInDown" >
 					<h3>Visítanos</h3>
 					<img src="img/VISITANOS.png"/><br>
 					<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div id="icon2" class="col-md-3 col-sm-6 col-xs-12 celda">
+				<div id="icon2" class="col-md-3 col-sm-6 col-xs-12 celda animated fadeInDown">
 					<h3>Experimenta</h3>
 					<img src="img/EXPERIMENTA.png"/><br>
 					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div id="icon3" class="col-md-3 col-sm-6 col-xs-12 celda">
+				<div id="icon3" class="col-md-3 col-sm-6 col-xs-12 celda animated fadeInDown">
 					<h3>Siente</h3>
 					<img src="img/SIENTE.png"/><br>
 					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
-				<div id="icon4" class="col-md-3 col-sm-6 col-xs-12 celda">
+				<div id="icon4" class="col-md-3 col-sm-6 col-xs-12 celda animated fadeInDown">
 					<h3>Ahorra</h3><img src="img/AHORRO.png"/><br>
 					<i  class="fa fa-angle-down fa-4x" aria-hidden="true"></i></div>
 			</div>

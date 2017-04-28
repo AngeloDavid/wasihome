@@ -29,5 +29,15 @@ $(document).ready(function(){
         placement: "bottom",
         trigger: "hover"
     });
-
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    var firstCss ="animated bounceInRight";
+    var secondCss="animated bounceInLeft";
+    $('#prueba').on('click',function () {
+        $('#txt1').addClass(firstCss).one(animationEnd, function() {
+            $(this).removeClass(firstCss);
+        });
+        $('#txt2').addClass(secondCss).one(animationEnd, function() {
+                    $(this).removeClass(secondCss );
+                });
+            })
 });
