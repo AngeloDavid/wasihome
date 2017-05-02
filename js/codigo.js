@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
     $('#icon1').popover({
-        title: "Dirreccion",
+        title: "Dirección",
         content: "<p>Juan Pablo Sanz e Iñaquito esquina – Edif. CAMICON 5to piso</p>",
         html: true,
         placement: "bottom",
@@ -12,19 +12,19 @@ $(document).ready(function(){
     });
     $('#icon2').popover({
         title: "Nuestros Productos",
-        content: "<ul><li>Fotos 360</li><li>Realidad virtual</li><li>Realidad Aumentada</li></ul>",
+        content: "<ul><li>Domótica</li><li>Fotos y videos 360°</li><li>Realidad virtual</li><li>Realidad Aumentada</li><li>Tour Virtual</li><li>Drones</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover focus"
     });
     $('#icon3').popover({
-        content: "<p>Te enseñamos mucho más de lo que puedas esperar ...</p>",
+        content: "<ul><li>Emociones</li><li>Emociones</li><li>Emociones</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"
     });
     $('#icon4').popover({
-        content: "Tus ventas en menor tiempo con menos dinero en un solo lugar",
+        content: "<ul><li>Tiempo</li><li>Dinero</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"
