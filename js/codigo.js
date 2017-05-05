@@ -8,7 +8,7 @@ $(document).ready(function(){
         content: "<p>Juan Pablo Sanz e Iñaquito esquina – Edif. CAMICON 5to piso</p>",
         html: true,
         placement: "bottom",
-        trigger: "hover",
+        trigger: "hover"
     });
     $('#icon2').popover({
         title: "Nuestros Productos",
@@ -18,13 +18,13 @@ $(document).ready(function(){
         trigger: "hover focus"
     });
     $('#icon3').popover({
-        content: "<ul><li>Emociones</li><li>Emociones</li><li>Emociones</li></ul>",
+        content: "<ul><li>Usa la tecnología</li><li>Vive la Experiencia</li><li>Disfruta</li><li>Se parte</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"
     });
     $('#icon4').popover({
-        content: "<ul><li>Tiempo</li><li>Dinero</li></ul>",
+        content: "<ul><li>Menor Tiempo</li><li>Menor Dinero</li><li>Todo en un solo lugar</li><li> Más tiempo para ti</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"
