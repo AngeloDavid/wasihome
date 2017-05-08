@@ -50,6 +50,7 @@
     padding-top: 10%;
     padding-bottom: 5%;
     color: #030405;
+    background-color: white
 }
 #Contenedor .thumbnail{
     padding: 7% 2% 7% 2%;
@@ -168,4 +169,23 @@
     right: 0;
     margin: 0 auto;
     top: 20px;
+}
+/*Modal*/
+#E_Modal .modal-content{
+    /*background-color: #243A70 ;*/
+    border-radius:0px;
+}
+#E_Modal .modal-content .modal-header{
+    background-color: #caab8a;
+    color: white;
+    border-bottom: none;
+    font-weight: bold;
+    text-align: center;
+}
+#E_Modal .modal-content .modal-footer{
+    border-top: none ;
+}
+#E_Modal .modal-body iframe{
+    width :100%;
+    height:500px;
 }

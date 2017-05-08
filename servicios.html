@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WasiHome-Services</title>
+    <link rel="icon" type="image/x-icon" href="img/logos/logo.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="iconos/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/" >Inicio</a></li>
+                        <li><a href="index.html" >Inicio</a></li>
                         <li><a href="./servicios.html">Servicios</a></li>
                         <li><a href="#PuntoVenta">Punto de Venta</a></li>
                         <li><a href="./index.html#Contactenos">Contactenos</a></li>
@@ -40,15 +41,14 @@
         
     </div>
     <div id="Contenedor">
-        <div class="container">
-            <div class="row">
+        <div id="datos-contenedor" class="container">
+            <div class="row" >
                 <div class="page-header">
-                    <h1 id="Titulo" >TECNOLOGÍA INMOBILIARIA</h1>
+                    <h1 id="Titulo" class="hidden" >TECNOLOGÍA INMOBILIARIA</h1>
                 </div>
-                <p id="Descripcion">WasiHome Inmobiliaria, es una nueva propuesta de inmobiliaria virtual en la que queremos acompañar a todos nuestros clientes a vivir una experiencia única en su nuevo hogar y ayudarlos a tomar la mejor decisión</p>
+                <p id="Descripcion" class="hidden" >WasiHome Inmobiliaria, es una nueva propuesta de inmobiliaria virtual en la que queremos acompañar a todos nuestros clientes a vivir una experiencia única en su nuevo hogar y ayudarlos a tomar la mejor decisión</p>
             </div>
-            <div class="row"></div>
-            <div id="Servicios" class="row container">
+            <div id="Servicios" class="row container hidden">
                 <div class="col-xs-6 col-md-4">
                     <div class="thumbnail">
                         <div class="div-img hidden1">
@@ -57,7 +57,8 @@
                         <div class="caption">
                             <h3>Realidad Virtual</h3>
                             <p>Una experiencia única acompañada de la interacción con el contenido y un total realismo en cada detalle y acabado, permitirá a sus clientes visitar más de una propiedad en cuestión de minutos y desde la comodidad de su hogar u oficina.</p>
-                            <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                            <p class="boton"><a href="#" class="btn" role="button"> Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="RV"> Ver más</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -69,7 +70,8 @@
                         <div class="caption">
                             <h3>Fotos y Videos de 360°</h3>
                             <p>Creación y visualización de atractivos videos e imágenes panorámicas en 360º, permitirá a sus clientes interactuar de forma, fácil y sencilla desde su celular, tableta o computador con todos sus proyectos inmobiliarios.</p>
-                            <p class="boton" ><a href="#" class="btn" role="button"> Ver mas</a></p>
+                            <p class="boton" ><a href="#" class="btn" role="button"> Ver más</a></p>
+                            <!--<p class="boton" ><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="FV360"> Ver mas</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -81,7 +83,8 @@
                         <div class="caption">
                         <h3>Fotos y videos Aéreos</h3>
                         <p>Capture y guarde los mejores ángulos aéreos de sus propiedades, una nueva perspectiva de mirar, preciar y disfrutar hasta el último de los espacios, detalles y acabados mediante un video o fotografía con el drone.</p>
-                        <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                        <p class="boton"><a href="#" class="btn" role="button"> Ver más</a></p>
+                        <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="FVA"> Ver mas</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -93,7 +96,8 @@
                         <div class="caption">
                             <h3>Realidad Aumentada</h3>
                             <p>Entregue maquetas virtuales e interactivas a todos sus clientes; un material innovador y atractivo para su equipo de ventas, será la forma más inteligente de ahorrar recursos en la venta de todos sus proyectos inmobiliarios.</p>
-                            <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                            <p class="boton"><a href="#" class="btn" role="button"> Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="RA"> Ver mas</a></p>-->
                         </div>
                         </div>
                     
@@ -106,7 +110,8 @@
                         <div class="caption">
                             <h3>Maquetas y Render</h3>
                             <p>Servicio de marquetería, levantamiento de planos, modelado y renderizado, le permitirán presentar maquetas a detalles, construidas con excelentes acabados y en materiales convencionales o poco convencionales.</p>
-                            <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                            <p class="boton"><a href="#" class="btn" role="button"> Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="MR"> Ver más</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -118,7 +123,8 @@
                         <div class="caption">
                         <h3>Tour Virtual</h3>
                         <p>Creación de animaciones hiper-realistas en vídeo y representaciones, permitirán a sus clientes visualizar todo un proyecto inmobiliario en movimiento mediante un recorrido totalmente interactivo.</p>
-                        <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                        <p class="boton"><a href="#" class="btn" role="button"> Ver más</a></p>
+                        <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="TV"> Ver mas</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -130,7 +136,8 @@
                         <div class="caption">
                         <h3>Domótica – Inmótica</h3>
                         <p>Contamos con nuestra propia línea de domótica; automatice cualquier espacio de su proyecto inmobiliario, aportando servicios de gestión energética, seguridad, confort, comunicación y accesibilidad. ¡100% garantizados!</p>
-                        <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                        <p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="DI"> Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="DI"> Ver más</a></p>    -->
                         </div>
                     </div>
                 </div>
@@ -142,7 +149,8 @@
                         <div class="caption">
                         <h3>Topografía con Drone</h3>
                         <p>Realice el estudio y levantamiento topográfico para todos sus proyectos de construcción con una mejor precisión, seguridad y en tiempo récord gracias a la tecnología que garantiza nuestra flota de drones.</p>
-                        <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                        <p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="TD" > Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="TD" > Ver mas</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -154,7 +162,8 @@
                         <div class="caption">
                         <h3>Hologramas</h3>
                         <p>Nuestro servicio de proyección de hologramas, le permitirá presentar todos sus proyectos inmobiliarios y de construcción como el centro focal y de atracción en todos sus eventos.</p>
-                        <p class="boton"><a href="#" class="btn" role="button"> Ver mas</a></p>
+                        <p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="HG"> Ver más</a></p>
+                            <!--<p class="boton"><a href="#" class="btn" role="button" data-toggle="modal" data-target="#E_Modal" data-whatever="HG"> Ver mas</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -162,6 +171,24 @@
             </div>
         </div>
     </div>
+    
+    <!--Modal de los items-->
+    <div class="modal fade" id="E_Modal" tabindex="-1" role="dialog" aria-labelledby="E_Modal_label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="E_Modal_label">New message</h3>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="Footer" class="container-fluid">
         <div class="col-md-9 col-sm-5 col-xs-5"><i class="fa fa-copyright" aria-hidden="true">2017 Copyrigh</i></div>
         <div class="col-md-3 col-sm-7 col-xs-7 redes1">
@@ -178,5 +205,6 @@
     <script src="js/parallax.js"></script>
     <script src="js/coverr.js"></script>
     <script src="js/servicios.js"></script>
+    <script src="//code.tidio.co/r0f9jobengb69tj4rm2ichgsxeoooutn.js"></script>
 </body>
 </html>
