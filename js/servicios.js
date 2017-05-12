@@ -17,19 +17,19 @@ var  tecnologias=[
     {id:"TD",title:"Topografía con Drone", ver_mas:""},
     {id:"HG",title:"Hologramas", ver_mas:""}
     ] ;
-
+console.log();
 $(window).scroll(function(){
     window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
 
     scroll_critical = parseInt($("#Home").height()) - 550; // VALOR DE TU DIV
 
     if (window_y > scroll_critical) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
-        // console.log(window_y);
-        if(!first){
 
-            $('#Titulo').removeClass('hidden');
-            $('#Descripcion').removeClass('hidden');
-            $('#Servicios').removeClass('hidden');
+        if(!first && $(window).height()<1000){
+
+            $('#Titulo').removeClass('hidden-lg');
+            $('#Descripcion').removeClass('hidden-lg');
+            $('#Servicios').removeClass('hidden-lg');
 
 
             $('#Titulo').addClass("animated "+title).one(animationEnd, function() {

@@ -18,13 +18,13 @@ $(document).ready(function(){
         trigger: "hover focus"
     });
     $('#icon3').popover({
-        content: "<ul><li>Usa la tecnología</li><li>Vive la Experiencia</li><li>Disfruta</li><li>Se parte</li></ul>",
+        content: "<ul><li>Usa la tecnología</li><li>Vive la Experiencia</li><li>Disfruta</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"
     });
     $('#icon4').popover({
-        content: "<ul><li>Menor Tiempo</li><li>Menor Dinero</li><li>Todo en un solo lugar</li><li> Más tiempo para ti</li></ul>",
+        content: "<ul><li>Tiempo</li><li>Dinero</li><li>Todo en un solo lugar</li></ul>",
         html: true,
         placement: "bottom",
         trigger: "hover"

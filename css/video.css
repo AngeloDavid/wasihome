@@ -235,14 +235,14 @@ body{
 	background-color: #caab8a;
 	padding-top: 2%;
 	padding-bottom: 1%;
+	text-align: center;
 }
 .redes1{
-	float: right;
-	position: static;	
-    text-align:right;
+	position: static;
+	padding-bottom: 10px;
 }
 .redes1>i{
-	padding: 2%;
+	padding-right: 1%;
 }
 .redes1>i:hover {
 	cursor: pointer;	
